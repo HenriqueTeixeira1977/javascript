@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script | MÓD C | A09 | ex005</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #000218;            
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(255, 1, 1);
+            padding: 10px;
+            border: tomato solid 10px;
+        }
+        h1{
+            color: rgb(226, 226, 226);
+        }
+        h2{
+            color: rgb(255, 238, 0);
+        }
+        h3{
+            color: rgb(0, 255, 4);
+        }
+        p{
+            color: rgb(255, 255, 255);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Java Script | MÓD C | A09 | ex005</h1>  <!--  Isso é um comentário em HTML!!! -->
+    <h2>Henrique Teixeira</h2><br>
+    <h3>Iniciando Estudos com DOM</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem laboriosam adipisci sunt at, dicta nihil eaque voluptatibus aliquid quaerat ad temporibus nam cumque natus? Modi, cupiditate recusandae! Id, tempore.</p>
+    
+    <br>
+    <hr>
+    <br>
+
+    <p>Aqui vai o resultado: </p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em Mim</div>
+    <div name="msg">Clique em Mim</div>
+    <div class="msg">Clique em Mim</div>
+
+    <br><hr><br>
+
+        
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[2]
+        
+        var d = window.document.querySelector('div#msg')               
+        d.innerHTML = 'Estou usando o querySelector no div#msg.'
+        
+        
+        
+        
+        /*
+        var d = window.document.getElementsByName('msg')[0]
+        d.innerText = 'Olá!'
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.style.color = 'black'
+        d.innerText = 'Estou aguardando...'*/
+
+        /*
+        
+        window.alert(p1.innerText)
+        window.document.write('Esta escrito assim: ' +  p1.innerText)
+         
+        corpo.style.background = 'yellowgreen'
+        p1.style.color = 'yellow'
+
+
+        */
+    </script>
+
+
+</body>
+</html>

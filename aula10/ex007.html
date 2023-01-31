@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script | MÓD C | A#10 | ex007 - Somando Númeroa</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #000218;            
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(217, 255, 1);
+            padding: 20px;
+            border: rgb(255, 217, 0) solid 10px;
+            height: 100vh;
+        }
+        h1{
+            color: rgb(226, 226, 226);
+        }
+        h2{
+            color: rgb(255, 238, 0);
+        }
+        h3{
+            color: rgb(0, 255, 4);
+        }
+        p{
+            color: rgb(255, 255, 255);
+        }
+        input{
+            font: normal 20pt arial;
+            width: 100px;
+            margin: 20px 0;
+        }
+
+
+    </style>
+
+</head>
+    <body>
+        <h1>Java Script | MÓD C | A#10 | ex007 - Somando Valores</h1>  <!--  Isso é um comentário em HTML!!! -->
+        <h2>Henrique Teixeira</h2><br>
+        <h3>Somando Valores</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem laboriosam adipisci sunt at, dicta nihil eaque voluptatibus aliquid quaerat ad temporibus nam cumque natus? Modi, cupiditate recusandae! Id, tempore.</p>
+        
+        <br>
+        <hr>
+        <br>
+
+        <div class="exc">
+            <h1>Somando Valores</h1>
+            <input type="number" name="txtn1" id="txtn1"> + 
+            <input type="number" name="txtn2" id="txtn2">
+            <input type="button" value="Somar" onclick="somar()">
+            <div id="res">Resultado</div>
+        </div> 
+
+        <script>
+            function somar() {
+                var tn1 = window.document.getElementById('txtn1')
+                var tn2 = window.document.querySelector('input#txtn2')
+                var res = window.document.getElementById('res')
+                var n1 = Number(tn1.value)
+                var n2 = Number(tn2.value)
+                var s = n1 + n2
+                res.innerHTML = `A Soma entre ${n1} e ${n2} é igual a ${s}`
+            }      
+        </script>
+    </body>
+</html>
