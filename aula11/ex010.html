@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script | MÓD D | A#11 | ex010 - Condições (Parte1)</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #000218;            
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(217, 255, 1);
+            padding: 20px;
+            border: rgb(255, 217, 0) solid 10px;
+            height: 100vh;
+        }
+        h1{
+            color: rgb(226, 226, 226);
+        }
+        h2{
+            color: rgb(255, 238, 0);
+        }
+        h3{
+            color: rgb(0, 255, 4);
+        }
+        p{
+            color: rgb(255, 255, 255);
+        }
+        input{
+            font: normal 20pt arial;
+            width: 100px;
+            margin: 20px 0;
+        }
+
+
+    </style>
+
+</head>
+    <body>
+        <h1>Java Script | MÓD D | A#11 | ex010 - Condições (Parte1)</h1>  <!--  Isso é um comentário em HTML!!! -->
+        <h2>Henrique Teixeira</h2><br>
+        <h3>Condições - Parte1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem laboriosam adipisci sunt at, dicta nihil eaque voluptatibus aliquid quaerat ad temporibus nam cumque natus? Modi, cupiditate recusandae! Id, tempore.</p>
+        <br>
+        <hr>
+        <br>
+
+        <article>
+            <h1>Sistema de Multas</h1>
+
+            Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h.
+            <input type="button" value="Verificar" onclick="calcular()">
+            <div id="res">
+
+            </div>
+        </article>
+
+
+
+        <script>
+            /*var txtv = window.document.getElementById('txtvel')*/
+            /*var txtv = window.document.querySelector('input#txtvel')*/
+
+            function calcular() {
+                var txtv = window.document.querySelector('input#txtvel')
+                var res = window.document.querySelector('#res')
+                var vel = Number(txtv.value)
+                res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h.</strong><p>`
+                    if (vel > 60) {
+                        res.innerHTML += `<p>Você está <strong>MULTADO</strong> por <strong>EXCESSO</strong> de Velocidade!!!</p>`
+                    }
+                res.innerHTML += `<p>Dirija Sempre com o Cinto de Segurança!!!.<p>`
+            }
+
+        </script>
+    </body>
+</html>

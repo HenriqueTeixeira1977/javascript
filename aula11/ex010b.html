@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script | MÓD D | A#11 | ex010b - Condições (Parte1)</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #000218;            
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(217, 255, 1);
+            padding: 20px;
+            border: rgb(255, 217, 0) solid 10px;
+            height: 100vh;
+        }
+        header h1{
+            color: rgb(226, 226, 226);
+        }
+        header h2{
+            color: rgb(255, 238, 0);
+        }
+        header h3{
+            color: rgb(0, 255, 4);
+        }
+        header p{
+            color: rgb(255, 255, 255);
+        }
+        article input{
+            font: normal 20pt arial;
+            width: 100px;
+            margin: 20px 0;
+        }
+
+
+    </style>
+
+</head>
+    <body>        
+        <header>
+            <h1>Java Script | MÓD D | A#11 | ex010b - Condições (Parte1)</h1>  <!--  Isso é um comentário em HTML!!! -->
+            <h2>Henrique Teixeira</h2><br>
+            <h3>Condições - Parte1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem laboriosam adipisci sunt at, dicta nihil eaque voluptatibus aliquid quaerat ad temporibus nam cumque natus? Modi, cupiditate recusandae! Id, tempore.</p>
+            <br>
+            <hr>
+            <br>
+        </header>
+        <article>
+            <h1>Sistema de Nacionaliade Brasileira</h1>
+
+            Onde voce nasceu: <input type="text" name="pais" id="pais">
+            <input type="button" value="Verificar" onclick="nacao()">
+            <div id="res"></div>
+        </article>
+
+
+
+        <script>
+            function nacao() {                
+                var origem = window.document.querySelector('#pais')
+                var res = window.document.querySelector('#res')
+                res.innerHTML = `Voce digitou ${origem}. Seja muito bem vindo.`
+                    if (origem == 'Brasil') {
+                        res.innerHTML += `<P>Voce é <STRONG>BRASILEIRO(a)!!!</STRONG>.</P>`
+                    }else {
+                        res.innerHTML += `<P>Voce é <STRONG>ESTRANGEIRO(a)!!!</STRONG>.</P>`
+                    }
+            }
+            
+
+
+        </script>
+    </body>
+</html>
