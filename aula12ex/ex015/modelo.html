@@ -14,7 +14,7 @@
     </header>
    
     <main>
-        <div>
+        <div class="info" id="info">
             <p>Ano de Nascimento: <input type="Number" name="txtano" id="txtano" min="0"></p>
             <p>Sexo: 
                 <input type="radio" name="radsex" id="mas" checked>
@@ -23,15 +23,19 @@
                 <label for="fem">Feminino</label>                
             </p>
             <p>
-                <input type="button" value="Verificar">
+                <input type="button" value="verificar" id="btnver" onclick="verificar()">
             </p>
         </div>
-        <div>
+        <div class="res" id="res">
+            Preencha os dados acima para ver o resultado!
         </div>
+        <br>
+        <hr>
+        <br>
     </main>
     
     <footer>
-        <p>&copy;HnRqTxr</p>
+        <p>&copy;HnRqTxR</p>
     </footer>
     
     <script src="script.js"></script>
