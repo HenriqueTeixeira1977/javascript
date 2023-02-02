@@ -5,9 +5,6 @@ function carregar() {
     var hora = data.getHours()
     var min = data.getMinutes()
     
-    //var hora = 20
-
-
     msg.innerHTML = `AGORA SÃO ${hora}:${min} horas.`
 
     if(hora >= 0 && hora < 12 ) {
