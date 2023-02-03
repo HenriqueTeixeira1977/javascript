@@ -1,35 +1,18 @@
-/*
-function contar() {
-    var ini = window.document.querySelector('#inicio')
-    var fim = window.document.querySelector('#fim')
-    var passo = window.document.querySelector('#passo')
-    var res = window.document.querySelector('#res')  
-
-    res.innerHTML += ` \u{1F6A9} `
-
-    if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
-        res.innerHTML = `Impossivel Contar!!! Por favor, verifique os dados.`
-        //window.alert('[ERROR] Faltam Dados!')
+function gerar(){
+    let num = window.document.querySelector('#txtnum')
+    let tab =window.document.querySelector('#seltab')
+    if (num.value.length == 0) {
+        window.alert('Por Favor! Digite um numero Válido!')
     }else {
-        res.innerHTML = `Os valores sao...<br> `
-        let i = Number(ini.value)
-        let f = Number(fim.value)
-        let p = Number(passo.value)
-        if(p <= 0){
-            window.alert('Passo Invalido! Considerando PASSO = 1')
-            p = 1
+        let n = Number(num.value)
+        let c = 1  //  c é o contador!
+        tab.innerHTML = ''
+        while (c <= 10){
+            let item = document.createElement('option')
+            item.text = `${n} x ${c} = ${n*c}`
+            item.value = `tab${c}`
+            tab.appendChild(item)
+            c++
         }
-        if (i < f) {
-            //  Contagem Crescente
-            for(let c = i; c <= f; c += p){
-                res.innerHTML += ` ${c} \u{1F449}`
-            }
-        } else {
-            //  Contagem Decrescente
-            for(let c = i; c >= f; c -= p){
-                res.innerHTML += ` ${c} \u{1F449}`
-            }
-        }
-        res.innerHTML += `\u{1F3C1}`
     }
-}*/
+}
