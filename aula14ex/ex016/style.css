@@ -19,8 +19,8 @@ header{
     color: aliceblue;  
 }
 main{
-    width: 500px;
-    height: 450px;
+    width: 350px;
+    height: 530px;
     margin: auto;
     padding: 20px;
     background: white;
@@ -52,7 +52,7 @@ main{
     margin-right: 10px;
 }
 .form input{
-    width: 300px;
+    width: 200px;
     height: 50px;
     padding: 0 0 0 5px;
 
@@ -80,8 +80,9 @@ main{
 .res{
     background: rgb(255, 250, 96);
     margin-top: 20px;
-    padding: 20px 0;
+    padding: 20px 10px;
     border-radius: 5px;
+    font-weight: 500;
 }
 footer{
     display: flex;
