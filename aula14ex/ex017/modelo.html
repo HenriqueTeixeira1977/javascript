@@ -13,16 +13,30 @@
         <h1>TABUADA</h1>
     </header>
     <main>
-        <div class="txt">
-            TABUADA
+        <div class="enunciado">
+            <p>
+                Insira um numero abaixo para gerar a Tabuada.
+            </p>
         </div>
-        <div class="img">
-            <img src="" alt="_tabuada">
+        <div class="form" id="form">            
+            <p>
+                <label for="numero">Numero:</label>
+                <input type="number" name="num" id="num">
+            </p>
+        </div>
+        <div class="btn">
+            <p>
+                <input type="button" value="Gerar" id="gerar" onclick="gerar()">
+            </p>
+        </div>
+        <div class="res" id="res">
+            <p>&#x1F6A9 Os Valores aparecerao aqui... &#x1F6A9</p>
         </div>
     </main>
     <footer>
-        <p>&copy;HnrqTxr</p>
+        <p>&copy;HnRqTxr</p>
     </footer>
+    
     <script src="script.js"></script>
 
 </body>
